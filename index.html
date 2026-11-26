@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/svg+xml" 
+    href="favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NUMORA | Think in Numbers</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <main class="app-shell">
+
+        <header class="navbar">
+            <a href="#" class="brand">numora<span>.</span></a>
+
+            <div class="nav-caption">
+                <span class="live-dot"></span>
+                YOUR SPACE TO CALCULATE
+            </div>
+
+            <div class="version">01 / 26</div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-tag">A FRESH PERSPECTIVE</div>
+
+            <h1>
+                Make every<br>
+                number <span>matter.</span>
+            </h1>
+
+            <p>
+                A little clarity, a little creativity,
+                and calculations made beautiful.
+            </p>
+        </section>
+
+        <section class="workspace">
+
+            <div class="calculator">
+
+                <div class="calculator-heading">
+                    <div>
+                        <span class="section-label">YOUR CALCULATOR</span>
+                        <h2>Let's calculate.</h2>
+                    </div>
+
+                    <div class="calculator-icon">✳</div>
+                </div>
+
+                <div class="display">
+
+                    <div class="display-label">CURRENT EXPRESSION</div>
+
+                    <div id="history" class="history"></div>
+
+                    <div id="result" class="result">0</div>
+
+                    <div class="display-bottom">
+                        <span>NUMORA ENGINE</span>
+                        <span>READY TO GO ✦</span>
+                    </div>
+
+                </div>
+
+                <div class="keypad">
+
+                    <button class="key utility" data-action="clear">AC</button>
+                    <button class="key utility" data-action="delete">DEL</button>
+                    <button class="key utility" data-action="percent">%</button>
+                    <button class="key operator" data-value="/">÷</button>
+
+                    <button class="key" data-value="7">7</button>
+                    <button class="key" data-value="8">8</button>
+                    <button class="key" data-value="9">9</button>
+                    <button class="key operator" data-value="*">×</button>
+
+                    <button class="key" data-value="4">4</button>
+                    <button class="key" data-value="5">5</button>
+                    <button class="key" data-value="6">6</button>
+                    <button class="key operator" data-value="-">−</button>
+
+                    <button class="key" data-value="1">1</button>
+                    <button class="key" data-value="2">2</button>
+                    <button class="key" data-value="3">3</button>
+                    <button class="key operator" data-value="+">+</button>
+
+                    <button class="key utility" data-action="sign">±</button>
+                    <button class="key" data-value="0">0</button>
+                    <button class="key" data-action="decimal">.</button>
+                    <button class="key equals" data-action="calculate">=</button>
+
+                </div>
+
+            </div>
+
+            <aside class="side-panel">
+
+                <div class="note-card">
+                    <span class="section-label">A THOUGHT FOR TODAY</span>
+
+                    <div class="note-symbol">✳</div>
+
+                    <h3>Small steps.<br>Big possibilities.</h3>
+
+                    <p>
+                        Every great idea starts with
+                        one simple calculation.
+                    </p>
+
+                    <span class="card-number">01 — NUMORA</span>
+                </div>
+
+                <div class="history-card">
+                    <div class="history-heading">
+                        <span class="section-label">YOUR JOURNEY</span>
+                        <span>✧</span>
+                    </div>
+
+                    <h3>Calculation history</h3>
+
+                    <div id="history-list" class="history-list">
+                        <p class="empty-history">
+                            Your calculations will appear here.
+                        </p>
+                    </div>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <footer class="footer">
+            <span>NUMORA © 2026</span>
+            <span>THINK IN NUMBERS. LIVE IN POSSIBILITIES.</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
